@@ -5,7 +5,6 @@ import com.jwt.jwtauth.entity.UserEntity;
 import com.jwt.jwtauth.exceptions.UserNotFoundException;
 import com.jwt.jwtauth.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

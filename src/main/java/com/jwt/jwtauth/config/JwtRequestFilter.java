@@ -1,6 +1,5 @@
 package com.jwt.jwtauth.config;
 
-import com.jwt.jwtauth.service.UserService;
 import com.jwt.jwtauth.utils.JwtTokenUtils;
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.FilterChain;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
-import java.security.SignatureException;
 
 @Component
 @RequiredArgsConstructor
