@@ -56,10 +56,12 @@ public class JwtTokenUtils {
     }
 
     public String getUsername(String token) {
-        return getAllClaimsFromToken(token).getSubject();
+        return getAllClaimsFromToken(token)
+                .getSubject();
     }
 
     public List<String> getAuthorities(String token) {
-        return getAllClaimsFromToken(token).get("roles", List.class);
+        return getAllClaimsFromToken(token)
+                .get("roles", List.class);
     }
 }
